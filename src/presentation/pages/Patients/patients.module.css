@@ -1,0 +1,220 @@
+.listHeading {
+  margin-top: 0;
+  font-weight: 600;
+}
+
+.patientsList {
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
+  background-color: #fff;
+  overflow: auto;
+}
+
+.patientListTile {
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--background-light);
+  border-radius: 8px;
+  transition: background-color var(--transition);
+}
+
+.patientListTile:hover {
+  background-color: var(--background);
+  transition: background-color var(--transition);
+}
+
+.patientListTile p {
+  margin: 0;
+}
+
+.profilePic {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.nameAgeDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.age {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.tileActions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 30px;
+  font-size: 14px;
+  gap: 8px;
+  transition: color var(--transition), background-color var(--transition);
+}
+
+.action:hover {
+  color: #fff;
+  background-color: var(--active-blue);
+  transition: color var(--transition), background-color var(--transition);
+}
+
+.iconAction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  transition: color var(--transition), background-color var(--transition);
+}
+
+.iconAction:hover {
+  color: #fff;
+  background-color: var(--active-blue);
+  transition: color var(--transition), background-color var(--transition);
+}
+
+.greyIconAction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  transition: color var(--transition);
+}
+
+.greyIconAction:hover {
+  color: var(--active-blue);
+  transform: scale(1.1);
+  transition: color var(--transition);
+}
+
+.separator {
+  position: relative;
+  margin-bottom: 20px;
+  height: 20px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.separator::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  border-bottom: 1px dashed rgb(162, 192, 212);
+  left: 0px;
+  right: 0px;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.separator span {
+  text-transform: uppercase;
+  padding: 0px 6px;
+  position: relative;
+  z-index: 2;
+  margin-left: 17px;
+  font-size: 0.625rem;
+  font-weight: 500;
+  font-family: Rubik, sans-serif;
+  background-color: #fff;
+}
+
+.genderTabBar {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  gap: 4px;
+}
+
+.genderTab {
+  width: 100px;
+  padding: 6px 0;
+  border-radius: 2px;
+  background-color: var(--background-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color var(--transition);
+  cursor: pointer;
+  color: var(--active-blue);
+}
+
+.genderTabActive {
+  background-color: var(--background);
+}
+
+.genderTab:hover {
+  background-color: var(--background);
+  transition: background-color var(--transition);
+}
+
+.genderTab:first-of-type {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.genderTab:last-of-type {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.anchorBar {
+  display: flex;
+  margin: 20px;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--background);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.anchorBar a {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.anchorEnabled {
+  background-color: #fff;
+  color: var(--active-blue);
+}
+
+.anchorDisabled {
+  pointer-events: none;
+  cursor: unset;
+  color: var(--grey);
+}
+
+.anchorBar a:hover {
+  background-color: var(--active-blue);
+  color: #fff;
+  transition: background-color var(--transition), color var(--transition);
+}

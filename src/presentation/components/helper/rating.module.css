@@ -1,0 +1,20 @@
+.rating {
+  display: flex;
+}
+
+.active {
+  color: rgb(135, 201, 3);
+  transform: scale(1.1);
+}
+
+.front {
+  display: flex;
+  position: absolute;
+  z-index: 1;
+}
+
+.back {
+  display: flex;
+  z-index: 0;
+  color: #b9c2ca;
+}

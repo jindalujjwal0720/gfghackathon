@@ -1,0 +1,133 @@
+.listHeading {
+  margin-top: 0;
+  font-weight: 600;
+}
+
+.labels {
+  margin: 0 20px 20px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.labelCircle {
+  margin: auto 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.labelText {
+  font-size: 14px;
+  margin-right: 12px;
+}
+
+.category {
+  position: relative;
+}
+
+.timelineContainer {
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
+  background-color: #fff;
+  overflow: auto;
+  position: relative;
+  padding-top: 20px;
+}
+
+.verticalLine {
+  position: absolute;
+  border-left: 2px dashed var(--grey);
+  height: calc(100% - 90px);
+  left: 21px;
+  margin: 25px;
+  z-index: 0;
+}
+
+.timelineTile {
+  display: flex;
+  align-items: center;
+  margin: 20px 20px 20px 40px;
+}
+
+.timelineTile p {
+  margin: 0;
+}
+
+.timelineTileTime {
+  margin-right: 24px;
+  width: 80px;
+  font-weight: 700;
+  background-color: #fff;
+  border-radius: 8px;
+  z-index: 0;
+}
+
+.timelineTileTime::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--active-blue);
+  margin-right: 10px;
+  z-index: 1;
+}
+
+.timelineTileTimePending::before {
+  background-color: #f7cb73;
+}
+.timelineTileTimeCompleted::before {
+  background-color: green;
+}
+.timelineTileTimeCancelled::before {
+  background-color: red;
+}
+
+.timelineTileContent {
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  background-color: var(--background-light);
+  transition: background-color var(--transition);
+  display: flex;
+  justify-content: space-between;
+}
+
+.timelineTileContent:hover {
+  background-color: var(--background);
+  transition: background-color var(--transition);
+}
+
+.separator {
+  position: relative;
+  margin-bottom: 20px;
+  height: 20px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.separator::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  border-bottom: 1px dashed rgb(162, 192, 212);
+  left: 0px;
+  right: 0px;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.separator span {
+  text-transform: uppercase;
+  padding: 0px 6px;
+  position: relative;
+  z-index: 2;
+  margin-left: 17px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-family: Rubik, sans-serif;
+  background-color: #fff;
+}

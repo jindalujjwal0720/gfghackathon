@@ -1,0 +1,79 @@
+.grid {
+  display: grid;
+  gap: 8px 8px;
+  padding: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.tile {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #fff;
+  border-radius: 8px;
+  align-items: flex-start;
+  position: relative;
+}
+
+.avatar {
+  border-radius: 8px;
+  width: 48px;
+  height: 48px;
+  vertical-align: middle;
+  object-fit: cover;
+  margin: 12px 8px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin: 8px;
+  width: 100%;
+}
+
+.name {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.work {
+  margin: 0;
+  font-size: 12px;
+  margin: 4px 0;
+  color: #74808b;
+}
+
+.workspan {
+  font-weight: 500;
+}
+
+.price {
+  font-size: 12px;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 8px;
+  color: #5d6974;
+}
+
+.dummy {
+  display: none;
+}
+
+.appointment {
+  width: -moz-fit-content;
+  width: fit-content;
+  outline: 0;
+  border: none;
+  border-radius: 6px;
+  background-color: #0d48a11f;
+  color: #0d47a1;
+  cursor: pointer;
+  padding: 6px 12px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin: 2px 0;
+  position: absolute;
+  bottom: 6px;
+  right: 6px;
+}

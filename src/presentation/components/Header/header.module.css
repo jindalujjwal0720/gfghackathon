@@ -1,0 +1,113 @@
+.header {
+  /* background-color: teal; */
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 36px;
+  position: relative;
+}
+
+.searchBar {
+  max-width: 500px;
+  min-width: 300px;
+  padding: 10px 10px 10px 38px;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  transition: box-shadow var(--transition);
+  outline-width: 3px;
+  outline-color: var(--active-blue);
+}
+
+.searchBar:hover {
+  box-shadow: var(--input-shadow);
+}
+
+.searchIcon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50px;
+  font-size: 14px;
+}
+
+.notifications {
+  background-color: #fff;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto 8px;
+  transition: color var(--transition), background-color var(--transition);
+}
+
+.notifications svg {
+  margin: 8px;
+}
+
+.notifications:hover {
+  background-color: var(--active-blue);
+  color: var(--background);
+}
+
+.profileImage {
+  width: 36px;
+  height: 36px;
+  transform: translateY(1px);
+  border-radius: 8px;
+  margin: auto 8px;
+}
+
+.profileCard {
+  display: flex;
+  align-items: center;
+}
+
+.profileCard svg {
+  transition: var(--transition);
+}
+
+.profileCard p {
+  margin: 0;
+  padding-left: 8px;
+}
+
+.profileCardName {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.profileCardSpeciality {
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.7px;
+}
+
+.menu {
+  position: absolute;
+  right: 50px;
+  background-color: #fff;
+  top: 70%;
+  padding: 20px 20px 12px 20px;
+  border-radius: 8px;
+  opacity: 0;
+  transition: var(--transition);
+  box-shadow: rgba(20, 46, 110, 0.1) 0px 1px 8px;
+}
+
+.menuItem {
+  display: flex;
+  align-items: flex-end;
+  font-size: 14px;
+  gap: 8px;
+  color: var(--text-grey);
+  margin-bottom: 8px;
+}
+
+.visible {
+  transition: var(--transition);
+  opacity: 1;
+  visibility: visible;
+}

@@ -1,0 +1,92 @@
+.heading {
+  margin-top: 0;
+  font-weight: 600;
+}
+
+.reviewsContainer {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
+  overflow: auto;
+  padding: 20px;
+}
+
+.reviewsContainerHeader {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 20px;
+  align-items: center;
+}
+
+.headerDoctorImage {
+  border-radius: 8px;
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+}
+
+.doctorName {
+  font-weight: 500;
+  margin: 0;
+}
+
+.doctorOverallRating {
+  font-size: 26px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.reviewHeader {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.reviewPatientProfileImage {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.reviewTitle {
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.reviewPatientName {
+  margin-top: 2px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  color: var(--active-blue);
+}
+
+.reviewBody {
+  background-color: var(--background-light);
+  padding: 16px;
+  border-radius: 8px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  transition: background-color var(--transition);
+}
+
+.reviewBody:hover {
+  background-color: var(--background);
+  transition: background-color var(--transition);
+}
+
+.reviewBodyContent {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.reviewDate {
+  margin: 0;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.reviewDate span {
+  font-weight: 500;
+}

@@ -1,0 +1,241 @@
+.heading {
+  margin-top: 0;
+  font-weight: 600;
+}
+
+.subheading {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 20px;
+}
+
+.transactionsLayout {
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+  overflow: auto;
+  height: 500px;
+  gap: 20px;
+}
+
+.transactionsContainer {
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  height: 100%;
+  overflow: hidden;
+}
+
+.transactionsContainerScrollable {
+  overflow: auto;
+  height: 90%;
+}
+
+.transactionsContainerScrollable {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+.transactionsContainerScrollable::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.searchBar {
+  margin: 16px;
+  width: 300px;
+  padding: 0 8px 0 40px;
+  border: none;
+  border-radius: 6px;
+  transition: box-shadow var(--transition);
+  outline-width: 3px;
+  outline-color: var(--active-blue);
+  position: relative;
+}
+
+.searchBar:hover {
+  box-shadow: var(--input-shadow);
+}
+
+.searchIcon {
+  position: absolute;
+  right: 35%;
+  top: 34%;
+  color: var(--grey);
+}
+
+.separator {
+  position: relative;
+  margin-bottom: 20px;
+  height: 20px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.separator::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  border-bottom: 1px dashed rgb(162, 192, 212);
+  left: 0px;
+  right: 0px;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.separator span {
+  text-transform: uppercase;
+  padding: 0px 6px;
+  position: relative;
+  z-index: 2;
+  margin-left: 17px;
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-family: Rubik, sans-serif;
+  color: var(--grey);
+  background-color: #fff;
+}
+
+.transactionsContent {
+  margin: 20px;
+}
+
+.transactionTimeAndID {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  display: flex;
+  justify-content: space-between;
+  color: var(--grey);
+  align-items: center;
+}
+
+.transactionTimeAndID p:nth-child(2) {
+  font-size: 10px;
+}
+
+.transactionTimeAndID p {
+  margin: 0;
+}
+
+.transactionNoteAndAmount {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+
+.transactionNote {
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+.transactionAmount {
+  font-size: 18px;
+  font-weight: 700;
+  color: green;
+  margin-top: 4px;
+}
+
+.patientTile {
+  background-color: var(--background-light);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: background-color var(--transition);
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.patientTile:hover {
+  background-color: var(--background);
+  transition: background-color var(--transition);
+}
+
+.patientTileImage {
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.patietName {
+  font-weight: 500;
+  font-size: 14px;
+  margin: 0;
+  margin-bottom: 6px;
+}
+
+.patientEmail {
+  font-size: 12px;
+  margin: 0;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  color: var(--grey);
+}
+
+.monthlyTransactionsContainer {
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  overflow: auto;
+  height: 100%;
+}
+
+.monthlyTransactionsContainer {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+.monthlyTransactionsContainer::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.monthlyAmountTile {
+  margin: 20px;
+  border-radius: 8px;
+  background-color: var(--background-light);
+  transition: background-color var(--transition);
+  padding: 20px;
+}
+
+.monthlyAmountTile:hover {
+  background-color: var(--background);
+  transition: background-color var(--transition);
+}
+
+.monthYear {
+  font-weight: 500;
+  font-size: 14px;
+  margin: 0;
+}
+
+.monthlyAmounts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 8px;
+  gap: 12px;
+}
+
+.monthlyAmounts span {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--grey);
+}
+
+.monthlyAmount {
+  font-size: 20px;
+  font-weight: 700;
+  color: green;
+  margin: 0;
+}
+
+.monthlyAmountContainer {
+  border-right: 1px solid #a2c0d4;
+}
+
+.monthlyBonus {
+  font-size: 20px;
+  font-weight: 700;
+  color: #f17105;
+  margin: 0;
+}

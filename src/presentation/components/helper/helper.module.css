@@ -1,0 +1,33 @@
+/*
+DATA TABLE CSS
+*/
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tableHead tr {
+  border-bottom: 1px solid #a2adb9;
+}
+
+.tableHeadCell {
+  padding: 4px 8px 12px 8px;
+}
+
+.tableRow {
+  border-bottom: 1px solid rgba(224, 224, 224, 1);
+  margin: 0;
+}
+
+.tableCell {
+  padding: auto;
+  padding: 12px 8px;
+  margin-left: auto;
+  text-align: center;
+}
+
+.tableRow td:nth-child(1) {
+  margin-left: 0;
+  text-align: start;
+}

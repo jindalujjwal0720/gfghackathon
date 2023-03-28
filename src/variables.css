@@ -1,0 +1,13 @@
+:root {
+  --black: #28333e;
+  --white: #f1f3f8;
+  --grey: #8b96a2;
+  --text-grey: #414d55;
+  --background: #f1f5f9;
+  --background-light: #fafbfd;
+  --background-medium: #e4eaf0;
+  --active-blue: #2a64f2;
+  --input-shadow: #a2c0d4 0px 0px 0px 2px;
+  --transition: ease-in 0.3s;
+  --box-shadow: rgba(20, 46, 110, 0.1) 0px 1px 8px;
+}
